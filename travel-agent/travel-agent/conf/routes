@@ -3,14 +3,14 @@
 # ~~~~
 
 # Home page
-GET     /travel-agent                           controllers.Application.index
+GET     /travel-agent                            controllers.Application.index
 GET     /travel-agent/booking                    controllers.Booking.booking
 
 
 GET     /travel-agent/customer                  controllers.CustomerController.customer
 GET     /travel-agent/customers                 controllers.CustomerController.getCustomers
 GET     /travel-agent/customer/:id              controllers.CustomerController.getCustomer(id:Long)
-POST    /travel-agent/customer/create           controllers.CustomerController.createCustomer
+POST    /travel-agent/customer/                 controllers.CustomerController.createCustomer
 DELETE  /travel-agent/customer/:id              controllers.CustomerController.deleteCustomer(id: Long)
 PUT     /travel-agent/customer                  controllers.CustomerController.updateCustomer
 

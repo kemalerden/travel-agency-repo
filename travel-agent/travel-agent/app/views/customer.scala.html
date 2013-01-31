@@ -1,9 +1,23 @@
-@(message: String)<html>
+@(customerForm: Form[(String,String)])
 
-<h2>Register</h2>
+@import helper._
+
+@main(title = "Customer Registration") {
     
+    <center>
+    <h1>Register</h1>
    
+    @form(action = routes.CustomerController.createCustomer) {
+
+        @inputText(field = customerForm("name"), args = 'placeholder -> "Your name")
+      
+        @inputText(field = customerForm("surname"), args = 'placeholder -> "Your name")
+ 
         
-  <input type="submit" value="Register">
-        
-   
+
+        <p class="buttons">
+            <input type="submit" id="submit" value="Register">
+        <p>
+    }
+    </center>
+}
