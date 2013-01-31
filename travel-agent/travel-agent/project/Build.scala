@@ -4,7 +4,7 @@ import PlayProject._
 
 object ApplicationBuild extends Build {
 
-    val appName         = "Travel Agent System (TAS)"
+    val appName         = "travel-agent"
     val appVersion      = "1.0"
 
     val appDependencies = Seq(
