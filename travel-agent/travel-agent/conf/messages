@@ -1,0 +1,5 @@
+application.name = Travel Agent
+
+
+validation.errors = Lutfen bilgileri kontrol edip, tekrar gonderiniz
+validation.ean.duplicate = Musteri kayitlari daha once girilmis.
